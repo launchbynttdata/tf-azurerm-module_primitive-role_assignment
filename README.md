@@ -41,11 +41,11 @@ asdf install
 
 This applies to systems like Azure DevOps and CodeCommit.
 
-We need to clone the repo, rename it, and start a fresh git history to get rid of the `tf-module-skeleton` history. Below is a loose explanation of how to do this.
+We need to clone the repo, rename it, and start a fresh git history to get rid of the `lcaf-skeleton-terraform` history. Below is a loose explanation of how to do this.
 
 ``` shell
 git clone <this repo's URL>
-mv tf-module-skeleton tf-<whatever it is you're building>
+mv lcaf-skeleton-terraform tf-<whatever it is you're building>
 cd tf-<whatever it is you're building>
 rm -rf .git
 git init
@@ -76,7 +76,7 @@ TBD
 
 #### Overriding Make Behavior
 
-When run, `make` will look for a file called `.cafenv` in the repository root. This file if present will be included, and it can be used to override variables without altering the [Makefile](Makefile). A few examples of variables that can be substituted are commented out in [the file](.cafenv).
+When run, `make` will look for a file called `.lcafenv` in the repository root. This file if present will be included, and it can be used to override variables without altering the [Makefile](Makefile). A few examples of variables that can be substituted are commented out in [the file](.lcafenv).
 
 #### Module Configuration
 
@@ -111,9 +111,9 @@ When run, `make` will look for a file called `.cafenv` in the repository root. T
 
 - Modules are how Go manages dependencies
 - To initiate a new modules run the command: `go mod init [repo_url]`
-  - It is recommended to use the absolute repository url (e.g. github.com/nexient-llc/tf-module-skeleton)
+  - It is recommended to use the absolute repository url (e.g. github.com/launchbynttdata/lcaf-skeleton-terraform)
 - Relative path is highly discouraged in Go, use absolute path to import a package
-  - (e.g. `github.com/nexient-llc/tf-module-skeleton/[path_to_file]`)
+  - (e.g. `github.com/launchbynttdata/lcaf-skeleton-terraform/[path_to_file]`)
 - To update paths or versions run the command: `go get -t ./...`  go will update the dependencies accordingly
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements

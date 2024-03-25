@@ -1,10 +1,10 @@
-module github.com/nexient-llc/tf-azurerm-module_primitive-role_assignment
+module github.com/launchbynttdata/tf-azurerm-module_primitive-role_assignment
 
 go 1.20
 
 require (
 	github.com/gruntwork-io/terratest v0.46.11
-	github.com/nexient-llc/lcaf-component-terratest-common v0.0.0-20240117163707-a1dfafae58b4
+	github.com/launchbynttdata/lcaf-component-terratest v0.0.0-20240117163707-a1dfafae58b4
 	github.com/stretchr/testify v1.8.4
 )
 
