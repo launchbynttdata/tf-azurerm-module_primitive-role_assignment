@@ -54,6 +54,7 @@ variable "resource_number" {
 variable "region" {
   description = "AWS Region in which the infra needs to be provisioned"
   default     = "EastUS"
+  type        = string
 }
 
 variable "resource_names_map" {
@@ -85,4 +86,5 @@ variable "tags" {
 variable "role_definition_name" {
   description = "(Optional) Name of the Role Definition. Changing this forces a new resource to be created. Example: Reader"
   default     = "Reader"
+  type        = string
 }
