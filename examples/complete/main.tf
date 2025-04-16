@@ -52,6 +52,7 @@ module "role_assignment" {
   principal_id         = module.user_managed_identity.principal_id
   scope                = module.resource_group.id
   role_definition_name = var.role_definition_name
+  principal_type       = var.principal_type
 
   depends_on = [module.user_managed_identity]
 

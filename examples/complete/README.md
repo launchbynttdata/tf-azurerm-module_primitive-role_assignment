@@ -39,6 +39,7 @@ No resources.
 | <a name="input_resource_names_map"></a> [resource\_names\_map](#input\_resource\_names\_map) | A map of key to resource\_name that will be used by tf-launch-module\_library-resource\_name to generate resource names | <pre>map(object(<br>    {<br>      name       = string<br>      max_length = optional(number, 60)<br>    }<br>  ))</pre> | <pre>{<br>  "msi": {<br>    "max_length": 60,<br>    "name": "msi"<br>  },<br>  "rg": {<br>    "max_length": 60,<br>    "name": "rg"<br>  }<br>}</pre> | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | (Optional) A mapping of tags which should be assigned to the Storage Account. | `map(string)` | `{}` | no |
 | <a name="input_role_definition_name"></a> [role\_definition\_name](#input\_role\_definition\_name) | (Optional) Name of the Role Definition. Changing this forces a new resource to be created. Example: Reader | `string` | `"Reader"` | no |
+| <a name="input_principal_type"></a> [principal\_type](#input\_principal\_type) | (Optional) The type of Principal to assign the Role Definition to. Changing this forces a new resource to be created.<br>    Possible values are User, Group, ServicePrincipal, and Application. Default is User. | `string` | `"User"` | no |
 
 ## Outputs
 
