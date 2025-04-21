@@ -128,7 +128,7 @@ When run, `make` will look for a file called `.lcafenv` in the repository root. 
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | 3.116.0 |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | 3.117.1 |
 
 ## Modules
 
@@ -148,6 +148,7 @@ No modules.
 | <a name="input_scope"></a> [scope](#input\_scope) | The scope at which the Role Assignment applies to, such as /subscriptions/0b1f6471-1bf0-4dda-aec3-111122223333,<br>    /subscriptions/0b1f6471-1bf0-4dda-aec3-111122223333/resourceGroups/myGroup,<br>    or /subscriptions/0b1f6471-1bf0-4dda-aec3-111122223333/resourceGroups/myGroup/providers/Microsoft.Compute/virtualMachines/myVM,<br>    or /providers/Microsoft.Management/managementGroups/myMG. Changing this forces a new resource to be created. | `string` | n/a | yes |
 | <a name="input_role_definition_name"></a> [role\_definition\_name](#input\_role\_definition\_name) | (Optional) Name of the Role Definition. Changing this forces a new resource to be created. Example: Reader | `string` | `null` | no |
 | <a name="input_principal_id"></a> [principal\_id](#input\_principal\_id) | The ID of the Principal (User, Group or Service Principal) to assign the Role Definition to. Changing this forces a new resource to be created. | `string` | n/a | yes |
+| <a name="input_principal_type"></a> [principal\_type](#input\_principal\_type) | (Optional) The type of Principal to assign the Role Definition to. Changing this forces a new resource to be created.<br>    Possible values are User, Group, ServicePrincipal, and Application. Default is User. | `string` | `"User"` | no |
 
 ## Outputs
 

@@ -36,3 +36,12 @@ variable "principal_id" {
   description = "The ID of the Principal (User, Group or Service Principal) to assign the Role Definition to. Changing this forces a new resource to be created."
   type        = string
 }
+
+variable "principal_type" {
+  description = <<EOT
+    (Optional) The type of Principal to assign the Role Definition to. Changing this forces a new resource to be created.
+    Possible values are User, Group, ServicePrincipal, and Application. Default is User.
+  EOT
+  type        = string
+  default     = "User"
+}
