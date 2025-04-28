@@ -43,5 +43,5 @@ variable "principal_type" {
     Possible values are User, Group, ServicePrincipal, and Application. Default is User.
   EOT
   type        = string
-  default     = "User"
+  default     = "ServicePrincipal"
 }
