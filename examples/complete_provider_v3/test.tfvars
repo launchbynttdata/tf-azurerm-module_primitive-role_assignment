@@ -13,3 +13,5 @@
 tags = {
   Purpose = "Terratest"
 }
+
+principal_type = "ServicePrincipal"
