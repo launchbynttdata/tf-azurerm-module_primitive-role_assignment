@@ -14,4 +14,5 @@ tags = {
   Purpose = "Terratest"
 }
 
+# Must be set to 'User' when running locally
 principal_type = "ServicePrincipal"

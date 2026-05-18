@@ -55,5 +55,4 @@ module "role_assignment" {
   principal_type       = var.principal_type
 
   depends_on = [module.user_managed_identity]
-
 }

@@ -10,11 +10,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
 variable "product_family" {
   description = <<EOF
     (Required) Name of the product family for which the resource is created.
