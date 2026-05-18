@@ -43,7 +43,7 @@ variable "environment_number" {
 variable "resource_number" {
   description = "The resource count for the respective resource. Defaults to 000. Increments in value of 1"
   type        = string
-  default     = "000"
+  default     = "001"
 }
 
 variable "region" {

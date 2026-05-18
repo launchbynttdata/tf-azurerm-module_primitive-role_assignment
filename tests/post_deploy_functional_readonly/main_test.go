@@ -25,10 +25,20 @@ const (
 	infraTFVarFileNameDefault        = "test.tfvars"
 )
 
-func TestRoleAssignmentModule(t *testing.T) {
+func TestRoleAssignmentModule_ProviderV3(t *testing.T) {
 	ctx := types.CreateTestContextBuilder().
 		SetTestConfig(&testimpl.ThisTFModuleConfig{}).
-		SetTestConfigFolderName(testConfigsExamplesFolderDefault).
+		SetTestConfigFolderName(testConfigsExamplesFolderDefault + "/complete_provider_v3").
+		SetTestConfigFileName(infraTFVarFileNameDefault).
+		Build()
+
+	lib.RunSetupTestTeardown(t, *ctx, testimpl.TestComposableComplete)
+}
+
+func TestRoleAssignmentModule_ProviderV4(t *testing.T) {
+	ctx := types.CreateTestContextBuilder().
+		SetTestConfig(&testimpl.ThisTFModuleConfig{}).
+		SetTestConfigFolderName(testConfigsExamplesFolderDefault + "/complete_provider_v4").
 		SetTestConfigFileName(infraTFVarFileNameDefault).
 		Build()
 
