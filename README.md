@@ -78,7 +78,7 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|---------|
+|------|------|
 | [azurerm_role_assignment.role_assignment](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/role_assignment) | resource |
 
 ## Inputs
@@ -94,6 +94,6 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|---------|
+|------|-------------|
 | <a name="output_id"></a> [id](#output\_id) | The ID of the role definition |
 <!-- END_TF_DOCS -->
