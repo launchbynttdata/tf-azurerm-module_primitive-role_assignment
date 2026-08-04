@@ -40,6 +40,6 @@ No resources.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+|------|---------|
 | <a name="output_role_assignment_id"></a> [role\_assignment\_id](#output\_role\_assignment\_id) | n/a |
 <!-- END_TF_DOCS -->
