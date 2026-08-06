@@ -5,8 +5,8 @@ go 1.21
 toolchain go1.21.7
 
 require (
-	github.com/launchbynttdata/lcaf-component-terratest v1.0.3
-	github.com/stretchr/testify v1.8.4
+	github.com/launchbynttdata/lcaf-component-terratest v1.0.4
+	github.com/stretchr/testify v1.11.1
 )
 
 require (
